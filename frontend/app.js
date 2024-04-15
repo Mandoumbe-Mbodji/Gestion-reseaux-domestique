@@ -1,6 +1,5 @@
-// frontend/app.js
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://192.168.1.100:5000/devices') // Remplacez l'adresse IP par celle de votre Raspberry Pi
+    fetch('http://127.0.0.1:5000/devices') //  l'adresse IP  Raspberry Pi
         .then(response => response.json())
         .then(data => {
             const devicesDiv = document.getElementById('devices');
@@ -12,9 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching devices:', error));
 });
-//////////////////////// envoi //////////////////////
 
-// frontend/app.js
 document.getElementById('addDeviceForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -24,7 +21,7 @@ document.getElementById('addDeviceForm').addEventListener('submit', function(eve
         ip_address: formData.get('ip_address')
     };
 
-    fetch('http://192.168.1.100:5000/devices', {
+    fetch('http://127.0.0.1:5000/devices', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

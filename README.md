@@ -36,3 +36,6 @@ Si vous avez besoin de stocker de grandes quantités de données localement, un 
 Équipement de Test :
 
 Des équipements tels que des câbles Ethernet, un testeur de câbles, un multimètre, etc., peuvent être nécessaires pour le déploiement et la maintenance du réseau.
+
+
+ #python3 -m http.server
