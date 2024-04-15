@@ -13,7 +13,10 @@ def get_devices():
         {'name': 'Device 2', 'ip_address': '192.168.1.2'},
         {'name': 'Device 3', 'ip_address': '192.168.1.3'}
     ]
-    return jsonify(devices)
+    #return jsonify(devices)
+    response = jsonify(devices)
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:8000')
+    return response
 
 
 if __name__ == '__main__':
