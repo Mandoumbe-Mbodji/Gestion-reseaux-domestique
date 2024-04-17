@@ -39,3 +39,6 @@ Des équipements tels que des câbles Ethernet, un testeur de câbles, un multim
 
 
  #python3 -m http.server
+
+ #python -m venv venv
+ #source venv/bin/activate

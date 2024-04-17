@@ -10,7 +10,7 @@ def index():
 def get_devices():
     devices = [
         {'name': 'Device 1', 'ip_address': '192.168.1.1'},
-        {'name': 'Device 2', 'ip_address': '192.168.1.2'},
+        {'name': 'Device 2', 'ip_address': '192.168.1.0'},
         {'name': 'Device 3', 'ip_address': '192.168.1.3'}
     ]
     #return jsonify(devices)
