@@ -1,6 +1,7 @@
 # backend/resources.py
 from flask_restful import Resource, reqparse
 from models import Device
+from app import db, api
 
 class DeviceListResource(Resource):
     def get(self):
