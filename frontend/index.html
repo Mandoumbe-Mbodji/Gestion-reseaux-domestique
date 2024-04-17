@@ -15,8 +15,24 @@
             <ol>
             
                 
-              </ol>
+            </ol>
             <!-- Liste des appareils affichée ici -->
+        </div>
+        <div id="ajout">
+            <h3>Ajout d'appareils</h3>
+            <form id="addDeviceForm">
+                <label for="idInput">ID de l'appareil:</label>
+                <input type="text" id="idInput" name="id" required><br><br>
+            
+                <label for="nameInput">Nom de l'appareil:</label>
+                <input type="text" id="nameInput" name="name" required><br><br>
+            
+                <label for="ipInput">Adresse IP de l'appareil:</label>
+                <input type="text" id="ipInput" name="ip_address" required><br><br>
+            
+                <button type="button" id="addDeviceWithIdBtn">Ajouter un appareil avec ID</button>
+            </form>
+            
         </div>
     </div>
     <script src="app.js"></script>
